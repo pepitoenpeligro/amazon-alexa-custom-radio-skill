@@ -1,0 +1,20 @@
+user: {
+    shape: person
+    width: 60
+    height: 60
+  }
+  
+  lambda_function: {
+    label: "amazon-alexa-custom-radio-skill-aws-lambda"
+    icon: https://icons.terrastruct.com/aws%2FCompute%2FAWS-Lambda.svg
+  }
+  
+  amazon_skill: {
+    label: "custom skill"
+    icon: https://icons.terrastruct.com/aws%2FBusiness%20Applications%2FAlexa-For-Business.svg
+  }
+  
+  user -> amazon_skill: "reproduce radio Samuel"
+  
+  amazon_skill -> lambda_function
+  

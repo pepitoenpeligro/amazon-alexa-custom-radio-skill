@@ -5,6 +5,27 @@ AWS Lambda Function to allow Alexa to play custom radio from streaming resources
 This skill is configured to play `https://radiobahiagibraltar.es` but can be easily changed to play any other audio stream.
 
 
+## Use Case
+
+![](docs/diagram.png)
+
+## Project Dependencies
+
+
+#### Code Dependencies
+
+1. Pyhton 3.8 or higher (we use python3.12)
+2. python package ask-sdk-core==1.19.*
+3. python package python-i18n==0.3.*
+
+####  Deployment Dependencies
+
+1. Pyhton 3.8 or higher (we use python3.12)
+2. Docker
+3. AWS-CDK cli
+4. python package aws-cdk-lib==2.117.0
+5. python package constructs>=10.0.0,<11.0.0
+
 ## How to deploy 
 
 1. Install aws-cdk-cli (npm install -g aws-cdk)

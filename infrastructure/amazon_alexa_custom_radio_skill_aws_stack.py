@@ -10,7 +10,7 @@ class AmazonAlexaCustomRadioSkillAWSStack(aws_cdk.Stack):
             scope=self,
             id="alexa-skill",
             architecture=aws_cdk.aws_lambda.Architecture.ARM_64,
-            function_name="amazon-alexa-custom-radio-skill-aws-stack",
+            function_name="amazon-alexa-custom-radio-skill-aws-lambda",
             runtime=aws_cdk.aws_lambda.Runtime.PYTHON_3_12,
             handler="handler.lambda_handler",
             memory_size=128,
