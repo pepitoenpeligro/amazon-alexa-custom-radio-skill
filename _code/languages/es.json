@@ -1,0 +1,27 @@
+{
+    "SKILL_NAME": "Radio Bahia Gibraltar Skill",
+    "ABOUT": [
+        "This is an audio streaming skill that was built with a free template from dabblelab.com. To continue listening say: resume, or say: stop to stop listening."
+    ],
+    "ABOUT_REPROMPT":[
+        "Para continuar escuchando di: continuar o di para para parar."
+    ],
+    "HELP": [
+        "Esta habiliad reproduce un stream de audio."
+    ],
+    "HELP_REPROMPT": [
+        "Esta habiliad reproduce un stream de audio."
+    ],
+    "FALLBACK": [
+        "Lo siento, no te he entedido."
+    ],
+    "FALLBACK_REPROMPT": [
+        "Lo siento, no te he entedido."
+    ],
+    "UNHANDLED":[
+        "Lo siento, esta característica no la soporto."
+    ],
+    "DEVICE_NOT_SUPPORTED" : "Lo siento, esta habilidad no está soportada en este dispositivo.",
+    "ERROR": "Lo siento, no he sido capaz de procesa tu petición.",
+    "ERROR_REPROMPT": "Puedes repetir?"
+}

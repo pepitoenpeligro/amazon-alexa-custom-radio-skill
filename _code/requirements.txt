@@ -1,0 +1,2 @@
+ask-sdk-core==1.19.*
+python-i18n==0.3.*

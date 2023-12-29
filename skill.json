@@ -1,0 +1,48 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "radio samuel",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PlayTheAudioIntent",
+                    "slots": [],
+                    "samples": [
+                        "pon radio bahía gibraltar",
+                        "reproduce radio bahía gibraltar",
+                        "pon radio samuel",
+                        "samuel",
+                        "reproduce radio samuel",
+                        "reproduce samuel",
+                        "por radio",
+                        "radio"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}
