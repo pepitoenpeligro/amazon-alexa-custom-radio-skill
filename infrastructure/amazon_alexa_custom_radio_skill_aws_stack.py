@@ -31,7 +31,7 @@ class AmazonAlexaCustomRadioSkillAWSStack(aws_cdk.Stack):
                 )
             ],
             code=aws_cdk.aws_lambda.Code.from_asset(
-                "_code",
+                "src",
                 bundling=aws_cdk.BundlingOptions(
                     image=aws_cdk.DockerImage.from_registry(
                         "public.ecr.aws/sam/build-python3.12"

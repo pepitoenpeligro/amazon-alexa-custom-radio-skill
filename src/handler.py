@@ -2,6 +2,7 @@ import random
 import logging
 import json
 import os
+import warnings
 
 from ask_sdk_core.utils import is_request_type, is_intent_name
 from ask_sdk_core.dispatch_components import (
@@ -24,6 +25,8 @@ from ask_sdk_model.interfaces.audioplayer import (
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
+
+warnings.filterwarnings("ignore", category=SyntaxWarning, module='ask_sdk_model')
 
 
 # Audio stream metadata
@@ -305,12 +308,12 @@ class LocalizationInterceptor(AbstractRequestInterceptor):
     def process(self, handler_input):
         locale = handler_input.request_envelope.request.locale
         logger.info("Locale is {}".format(locale))
-
+        locales_path = f"{os.path.dirname(__file__)}/languages/"
         try:
-            with open("languages/" + str(locale) + ".json") as language_data:
+            with open(f"{locales_path}/{str(locale)}.json") as language_data:
                 language_prompts = json.load(language_data)
         except:
-            with open("languages/" + str(locale[:2]) + ".json") as language_data:
+            with open(f"{locales_path}/{str(locale[:2])}.json") as language_data:
                 language_prompts = json.load(language_data)
 
         handler_input.attributes_manager.request_attributes["_"] = language_prompts
